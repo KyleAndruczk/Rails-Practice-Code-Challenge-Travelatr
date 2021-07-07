@@ -1,0 +1,7 @@
+<h1>Destinations</h1>
+
+<ul>
+    <% @destinations.each do |blog| %>
+        <li><%= link_to blog.name, destination_path(blog) %></li>
+    <% end %>
+</ul>
